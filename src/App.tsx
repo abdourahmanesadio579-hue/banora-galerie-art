@@ -53,7 +53,7 @@ const GalleryAppContent: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#121110] text-[#E8E4DF] flex flex-col font-sans selection:bg-[#D4AF37]/30 selection:text-white">
+    <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-[#121110] text-[#E8E4DF] flex flex-col font-sans selection:bg-[#D4AF37]/30 selection:text-white">
       {/* If admin is viewing the site in visitor preview mode, show top return banner */}
       {isAdmin && previewAsClient && (
         <div className="bg-amber-950/90 border-b border-amber-500/40 px-4 py-2.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-amber-200 sticky top-0 z-50 backdrop-blur-md">
