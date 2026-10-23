@@ -9,7 +9,6 @@ import { Navbar } from './components/public/Navbar';
 import { Hero } from './components/public/Hero';
 import { GalleryGrid } from './components/public/GalleryGrid';
 import { ArtistBioSection } from './components/public/ArtistBioSection';
-import { TestimonialsSection } from './components/public/TestimonialsSection';
 import { Footer } from './components/public/Footer';
 import { ArtworkDetailModal } from './components/public/ArtworkDetailModal';
 import { RoomVisualizer } from './components/public/RoomVisualizer';
@@ -77,7 +76,6 @@ const GalleryAppContent: React.FC = () => {
         <Hero />
         <GalleryGrid />
         <ArtistBioSection />
-        <TestimonialsSection />
       </main>
 
       {/* Footer */}
