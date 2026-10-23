@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="100" fill="#141311"/>
+  <circle cx="256" cy="256" r="210" stroke="#D4AF37" stroke-width="8" stroke-opacity="0.8" />
+  <circle cx="256" cy="256" r="200" stroke="#F3E5AB" stroke-width="2" stroke-opacity="0.4" />
+  <!-- Artistic BANORA monogram 'B' -->
+  <path d="M 190 120 L 270 120 C 330 120 370 150 370 200 C 370 235 345 252 315 258 C 355 266 385 292 385 336 C 385 392 335 410 270 410 L 190 410 Z" fill="none" stroke="url(#goldGradient)" stroke-width="24" stroke-linejoin="round"/>
+  <path d="M 230 135 L 230 395" stroke="url(#goldGradient)" stroke-width="20" stroke-linecap="round"/>
+  <path d="M 230 258 L 290 258" stroke="url(#goldGradient)" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="256" cy="256" r="6" fill="#D4AF37"/>
+  <defs>
+    <linearGradient id="goldGradient" x1="160" y1="120" x2="385" y2="410" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F9F1D6"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA7C11"/>
+    </linearGradient>
+  </defs>
+</svg>

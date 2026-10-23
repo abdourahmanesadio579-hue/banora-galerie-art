@@ -1,0 +1,6 @@
+{
+  "name": "BANORA - Galerie d'Art & Tableaux Originaux",
+  "description": "Galerie d'art contemporain et vente en ligne des tableaux et œuvres d'art uniques de l'artiste BANORA. Exposition immersive, visualiseur mural et gestion de catalogue.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #121110;
+    color: #E8E4DF;
+    overflow-x: hidden;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    padding-left: env(safe-area-inset-left, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  /* Prevent automatic iOS Safari zoom-in on input focus */
+  @media screen and (max-width: 768px) {
+    input, select, textarea {
+      font-size: 16px !important;
+    }
+  }
+}
+
+/* Custom scrollbars for gallery browsing */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141312;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #36322C;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Texture overlay for museum wall effect */
+.bg-canvas-texture {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* ========================================================
+   THEME GALERIE LUMINEUSE (Luminous White Gallery)
+   ======================================================== */
+html.theme-light {
+  color-scheme: light;
+}
+
+html.theme-light body {
+  background-color: #FAF8F5 !important;
+  color: #2D2821 !important;
+}
+
+/* Subtle light gallery wall canvas texture */
+html.theme-light .bg-canvas-texture {
+  background-image: radial-gradient(rgba(184, 134, 11, 0.05) 1px, transparent 0) !important;
+}
+
+/* Base surface overrides in Light Gallery mode */
+html.theme-light .bg-\[\#121110\],
+html.theme-light .bg-\[\#100F0E\],
+html.theme-light .bg-\[\#11100E\],
+html.theme-light .bg-\[\#12110F\],
+html.theme-light .bg-\[\#0E0D0C\] {
+  background-color: #FAF8F5 !important;
+}
+
+html.theme-light .bg-\[\#161513\],
+html.theme-light .bg-\[\#161412\],
+html.theme-light .bg-\[\#181614\],
+html.theme-light .bg-\[\#181613\],
+html.theme-light .bg-\[\#1A1815\],
+html.theme-light .bg-\[\#1B1916\],
+html.theme-light .bg-\[\#141311\],
+html.theme-light .bg-\[\#1C1A17\],
+html.theme-light .bg-\[\#1C1813\],
+html.theme-light .bg-\[\#1F1D1A\] {
+  background-color: #FFFFFF !important;
+}
+
+html.theme-light .bg-\[\#121110\]\/95,
+html.theme-light .bg-\[\#12110F\]\/95,
+html.theme-light .bg-\[\#141311\]\/95 {
+  background-color: rgba(250, 248, 245, 0.95) !important;
+}
+
+html.theme-light .bg-\[\#201E1A\],
+html.theme-light .bg-\[\#221E19\],
+html.theme-light .bg-\[\#24211C\],
+html.theme-light .bg-\[\#25211B\],
+html.theme-light .bg-\[\#25221B\],
+html.theme-light .bg-\[\#26231D\],
+html.theme-light .bg-\[\#28241F\],
+html.theme-light .bg-\[\#2A251E\],
+html.theme-light .bg-\[\#2A2621\],
+html.theme-light .bg-\[\#2C2822\],
+html.theme-light .bg-\[\#2E2820\] {
+  background-color: #F4EFE6 !important;
+}
+
+/* Subtle architectural museum borders */
+html.theme-light .border-\[\#24211C\],
+html.theme-light .border-\[\#25221B\],
+html.theme-light .border-\[\#26231E\],
+html.theme-light .border-\[\#26231D\],
+html.theme-light .border-\[\#28241F\],
+html.theme-light .border-\[\#28251F\],
+html.theme-light .border-\[\#2A2722\],
+html.theme-light .border-\[\#2C2822\],
+html.theme-light .border-\[\#2C2923\],
+html.theme-light .border-\[\#2D2A24\],
+html.theme-light .border-\[\#2D2821\],
+html.theme-light .border-\[\#302B23\],
+html.theme-light .border-\[\#362E22\],
+html.theme-light .border-\[\#221F1B\],
+html.theme-light .border-\[\#201E1A\] {
+  border-color: #E8E2D8 !important;
+}
+
+/* Typographic contrast */
+html.theme-light .text-\[\#FAF8F5\],
+html.theme-light .text-\[\#E8E4DF\],
+html.theme-light .text-white {
+  color: #1A1816 !important;
+}
+
+html.theme-light .text-\[\#C8C2B7\],
+html.theme-light .text-\[\#A8A29E\],
+html.theme-light .text-\[\#D6D0C5\] {
+  color: #575147 !important;
+}
+
+html.theme-light .text-\[\#8F8A81\],
+html.theme-light .text-\[\#6E6961\] {
+  color: #7A7264 !important;
+}
+
+/* Rich gold and brass titles in light mode */
+html.theme-light .text-\[\#E6C665\] {
+  color: #9E7318 !important;
+}
+
+html.theme-light .text-\[\#D4AF37\] {
+  color: #946910 !important;
+}
+
+/* Cards & Modals subtle elevation shadow */
+html.theme-light .shadow-2xl,
+html.theme-light .shadow-xl {
+  box-shadow: 0 16px 36px -10px rgba(45, 38, 28, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Form inputs & selects */
+html.theme-light input,
+html.theme-light select,
+html.theme-light textarea {
+  background-color: #FFFFFF !important;
+  color: #171513 !important;
+  border-color: #DDD6CA !important;
+}
+
+html.theme-light input::placeholder,
+html.theme-light textarea::placeholder {
+  color: #999184 !important;
+}
+
+/* Scrollbar in light mode */
+html.theme-light ::-webkit-scrollbar-track {
+  background: #F4EFE6 !important;
+}
+
+html.theme-light ::-webkit-scrollbar-thumb {
+  background: #D9D1C3 !important;
+}
+
+html.theme-light ::-webkit-scrollbar-thumb:hover {
+  background: #C29B38 !important;
+}
+
+/* Mobile Bottom Navigation in light mode */
+html.theme-light nav[aria-label="Navigation mobile"] {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: #E8E2D8 !important;
+  box-shadow: 0 -8px 30px rgba(50, 40, 25, 0.07) !important;
+}
